@@ -1,5 +1,5 @@
-# GenesisH0
-A python script for creating the parameters required for a unique genesis block. SHA256/scrypt/X11/X13/X15.
+# GenesisH0  Python 3.x
+A Python 3.x script for creating the parameters required for a unique genesis block. SHA256/scrypt/X11/X13/X15.
 
 ### Dependencies
     sudo pip install scrypt construct==2.5.2
@@ -11,6 +11,7 @@ For X13 you will need the [x13_hash](https://github.com/sherlockcoin/X13-PythonH
 Create the original genesis hash found in Bitcoin
 
     python genesis.py -z "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" -n 2083236893 -t 1231006505
+    
 Output:
 
     algorithm: sha256
@@ -23,6 +24,7 @@ Output:
     genesis hash found!
     nonce: 2083236893
     genesis hash: 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+    
 Create the regtest genesis hash found in Bitcoin
 
     python genesis.py -z "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" -n 2 -t 1296688602 -b 0x207fffff
